@@ -1,0 +1,87 @@
+Blackbox IDEToggle Sidebar
+
+
+Share
+
+Create a website for shoe with name "jash"
+
+Copy message
+Edit message
+
+Overview
+I'll provide a basic HTML/CSS/JavaScript template for a simple website for a shoe brand named "Jash". This is a static site with a homepage, product showcase, and contact section. You can copy-paste the code into files (e.g., index.html, styles.css, script.js) and open index.html in a browser to view it. For a real deployment, use free hosting like GitHub Pages or Netlify.
+
+HTML Structure (index.html)
+html
+
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jash Shoes - Comfort and Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jash Shoes</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Jash Shoes</h2>
+        <p>Discover the perfect blend of comfort and style with our premium shoe collection.</p>
+        <img src="https://via.placeholder.com/800x400?text=Jash+Shoes+Banner" alt="Jash Shoes Banner">
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200?text=Sneaker" alt="Sneaker">
+                <h3>Classic Sneaker</h3>
+                <p>$59.99</p>
+                <button onclick="addToCart('Classic Sneaker')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200?text=Boot" alt="Boot">
+                <h3>Stylish Boot</h3>
+                <p>$89.99</p>
+                <button onclick="addToCart('Stylish Boot')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200?text=Loafer" alt="Loafer">
+                <h3>Elegant Loafer</h3>
+                <p>$49.99</p>
+                <button onclick="addToCart('Elegant Loafer')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Jash Shoes. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
